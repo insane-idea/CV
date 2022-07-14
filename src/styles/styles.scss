@@ -410,6 +410,7 @@ body._lock {
           overflow: hidden;
           box-shadow: 0px 10px 23px 6px rgba(9, 56, 92, 0.2);
           border-radius: 4px;
+          padding: 2%;
 
           &:hover {
             text-decoration: underline;
@@ -481,17 +482,18 @@ body._lock {
               align-items: flex-end;
               text-align: center;
               width: 100%;
-              padding: 1% 0;
+              padding: 2% 0;
               transition: all 0.3s ease;
 
               .repo-btn {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                background: darkcyan;
-                color: #ccc;
-                width: 200px;
-                height: 60px;
+                background: lemonchiffon;
+                color: darkviolet;
+                font-weight: 700;
+                width: 180px;
+                height: 50px;
                 border: 0;
                 border-radius: 6px;
                 font-family: "Raleway", sans-serif;
@@ -533,10 +535,10 @@ body._lock {
                 }
 
                 &:hover {
-                  background: #338033;
+                  background: palegreen;
                   top: 0;
-
                   cursor: pointer;
+
                   &:before {
                     transform: translateX(300px) skewX(-15deg);
                     opacity: 0.6;
@@ -636,7 +638,7 @@ body._lock {
               .project__repo {
                 .repo-btn {
                   font-size: 18px;
-                  width: 180px;
+                  width: 160px;
                   height: 45px;
                 }
               }
@@ -835,7 +837,7 @@ body._lock {
 
               .project__repo {
                 .repo-btn {
-                  font-size: 16px;
+                  font-size: 15px;
                   width: 120px;
                   height: 32px;
                 }
