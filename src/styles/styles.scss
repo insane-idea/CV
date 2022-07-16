@@ -455,20 +455,23 @@ body._lock {
               width: 100%;
               margin: 0;
               transition: all 0.3s ease;
-              background: rgba(153, 102, 255, 0.8);
+              // background: rgba(153, 102, 255, 0.8);
+              background: rgba(255, 255, 204, 0.9);
               border-radius: 4px;
 
               .project__stack {
                 margin: 0;
                 padding: 2% 4%;
-                color: rgba(255, 255, 255, 1);
+                // color: rgba(255, 255, 255, 1);
+                color: darkviolet;
                 text-align: center;
                 font-size: 24px;
 
                 span {
                   display: inline-block;
                   padding-right: 10px;
-                  color: sandybrown;
+                  // color: sandybrown;
+                  color: orangered;
                   font-size: 24px;
                 }
               }
