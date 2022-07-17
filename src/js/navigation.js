@@ -25,7 +25,6 @@ function onMenuLinkClick(e) {
     });
     e.preventDefault();
     hideMenu();
-    console.log(e.target);
     e.target.blur();
   }
 }
