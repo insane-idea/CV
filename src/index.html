@@ -23,17 +23,17 @@
             </div>
             <nav class="navbar col-lg-8 col-4">
               <div class="navbar__wrapper">
-                <div class="navbar__icon-wrapper">
+                <div class="navbar__iconWrapper">
                   <div class="navbar__icon d-flex d-lg-none">
                     <span></span>
                   </div>
                 </div>
                 <ul class="navbar__list d-lg-flex">
-                  <li class="navbar__item"><a class="navbar__link" data-goto="#intro" href="#">Intro</a></li>
-                  <li class="navbar__item"><a class="navbar__link" data-goto="#skills" href="#">Skills</a></li>
-                  <li class="navbar__item"><a class="navbar__link" data-goto="#experience" href="#">Experience</a></li>
-                  <li class="navbar__item"><a class="navbar__link" data-goto="#education" href="#">Education</a></li>
-                  <li class="navbar__item"><a class="navbar__link" data-goto="#portfolio" href="#">Portfolio</a></li>
+                  <li class="navbar__listItem"><a class="navbar__listItemLink" data-goto="#intro" href="#">Intro</a></li>
+                  <li class="navbar__listItem"><a class="navbar__listItemLink" data-goto="#skills" href="#">Skills</a></li>
+                  <li class="navbar__listItem"><a class="navbar__listItemLink" data-goto="#experience" href="#">Experience</a></li>
+                  <li class="navbar__listItem"><a class="navbar__listItemLink" data-goto="#education" href="#">Education</a></li>
+                  <li class="navbar__listItem"><a class="navbar__listItemLink" data-goto="#portfolio" href="#">Portfolio</a></li>
                 </ul>
               </div>
             </nav>
@@ -46,61 +46,63 @@
           <div class="width-wrapper container">
             <div class="row">
               <div class="intro__photo order-lg-1 col-lg-6">
-                <div class="photo">
+                <div class="photoContainer">
                   <img src="assets/img/ava.png" alt="candidate-photo">
                 </div>
               </div>
-              <div class="intro__main col-lg-6">
+              <div class="intro__content col-lg-6">
                 <h4 class="section-header intro__header">I am Sergey Pluzhnikov</h4>
                 <div class="intro__description">
+                  <!-- TODO make age dynamic -->
                   <p>
-                    I am a 27-year-old Junior Frontend Web Developer located in Moscow region, Russia.
-                    I love programming because I like to solve problems. It helps me to develop mental and creative abilities as I have a need for constant self-improvement.
-                    I am looking for a job to take more work and to increase my skills as a Web Developer.
+                    I am a 28-year-old Frontend Developer located in Moscow region, Russia.
+                    I love programming because I like to invent decisions. 
+                    It helps me to develop mental and creative abilities as I have a need for constant self-improvement.
+                    I am looking for a job to be useful in solving business-tasks and increase my skills as a developer too.
                   </p>
                 </div>
               </div>
             </div>
 
             <div class="row">
-              <ul class="intro__contacts">
-                  <li class="phone">
+              <ul class="intro__contactsList">
+                  <li class="intro__contactsItem phone">
                     <b>Phone</b>
                     <span>+7-985-165-3840</span>
                   </li>
-                  <li class="mail">
+                  <li class="intro__contactsItem mail">
                     <b>Email</b>
                     <span>pluzhnikserg031@rambler.ru</span>
                   </li>
-                  <li class="address">
+                  <li class="intro__contactsItem address">
                     <b>Address</b>
                     <span> 142500, Pavlovsky Posad, Moscow region, Russia</span>
                   </li>
-                  <li class="socials">
+                  <li class="intro__contactsItem socials">
                     <b>Socials</b>
-                    <div class="socials__container">
-                      <div class="github">
+                    <div class="socialIcons">
+                      <div class="social github">
                         <figure class="github-logo">
                           <a target="_blank" href="https://github.com/insane-idea">
                             <img src="~@assets/svg/icon_github.svg" alt="gh-logo" />
                           </a>
                         </figure>
                       </div>
-                      <div class="telegram">
+                      <div class="social telegram">
                         <figure class="github-logo">
                           <a target="_blank" href="https://t.me/eXec31">
                             <img src="~@assets/svg/icon_telegram.svg" alt="gh-logo" />
                           </a>
                         </figure>
                       </div>
-                      <div class="linkedin">
+                      <div class="social linkedin">
                         <figure class="github-logo">
                           <a target="_blank" href="https://www.linkedin.com/in/sergey-pluzhnikov-9ab5a3241/">
                             <img src="~@assets/svg/icon_linkedin.svg" alt="gh-logo" />
                           </a>
                         </figure>
                       </div>
-                      <div class="vkontakte">
+                      <div class="social vkontakte">
                         <figure class="github-logo">
                           <a target="_blank" href="https://vk.com/id20199210">
                             <img src="~@assets/svg/icon_vkontakte.svg" alt="gh-logo" />
@@ -113,44 +115,44 @@
             </div>
           </div>
         </section>
-        <section id="skills" class="skills container-fluid">
+        <section id="skills" class="infoSection skills container-fluid">
           <div class="width-wrapper container">
             <div class="row">
-              <div class="skills__main col-lg-4">
-                <div class="skills__main_wrapper">
-                  <h5 class="section-header skills__header">Skills</h5>
+              <div class="infoSection__heading col-lg-4">
+                <div class="infoSection__headingContent">
+                  <h5 class="section-header infoSection__headingHeader">Skills</h5>
                   <blockquote>
-                    <p class="section-quote">I am highly motivated to work with people who are as passionate as I am about building something awesome.</p>
+                    <p class="infoSection__blockquoteText">I am highly motivated to work with people who are as passionate as I am about building something awesome.</p>
                   </blockquote>
                 </div>
                 <div class="section-decoration">
                   <div id="infinity"></div>
                 </div>
               </div>
-              <div class="skills__content col-lg-8">
-                <div class="row">
-                  <div class="skills__frontend col-lg-6">
+              <div class="infoSection__content col-lg-8">
+                <div class="skillsTable row">
+                  <div class="frontend col-lg-6">
                     <hr class="invisible-hr">
                     <h6>Frontend development</h6>
                     <p>
                       React, JavaScript, TypeScript, Redux, RTK Query, Webpack, HTML5, CSS3, SCSS, Figma, Bootstrap
                     </p>
                   </div>
-                  <div class="skills__web col-lg-6 order-lg-0">
+                  <div class="web col-lg-6 order-lg-0">
                     <hr class="middle-hr d-block d-lg-none">
                     <h6>Web development</h6>
                     <p>
                       NodeJS, Git, Clean Code (KISS, DRY, YAGNI, BDUF), HTTP/HTTPS, RESTful API, JSON, Asynchronous programming
                     </p>
                   </div>
-                  <div class="skills__languages col-lg-6">
+                  <div class="languages col-lg-6">
                     <hr>
                     <h6>Languages</h6>
                     <p>
                       English — B2, Russian — native, German — A2, Chinese — A1
                     </p>
                   </div>
-                  <div class="skills__soft col-lg-6">
+                  <div class="soft col-lg-6">
                     <hr>
                     <h6>Soft skills</h6>
                     <p>
@@ -163,14 +165,15 @@
             <div class="ribbon"></div>
           </div>
         </section>
-        <section id="experience" class="experience container-fluid">
+        <!-- TODO add commercial exp -->
+        <section id="experience" class="infoSection experience container-fluid">
           <div class="width-wrapper container">
             <div class="row">
-              <div class="experience__main col-lg-4">
-                <div class="experience__main_wrapper">
-                  <h5 class="section-header experience__header">Experience</h5>
+              <div class="infoSection__heading col-lg-4">
+                <div class="infoSection__headingContent">
+                  <h5 class="section-header infoSection__header">Experience</h5>
                   <blockquote>
-                    <p class="section-quote">
+                    <p class="infoSection__blockquoteText">
                       I learned to write code on my own, solve problems of any complexity, quickly learn new technologies, and get pleasure from development process.
                     </p>
                   </blockquote>
@@ -179,13 +182,14 @@
                   <div id="infinity"></div>
                 </div>
               </div>
-              <div class="experience__content col-lg-8">
+              <div class="infoSection__content col-lg-8">
                 <div class="row">
-                  <div class="experience__rs-school">
+                  <div class="infoSection__organization rs-school">
                     <hr class="invisible-hr">
-                    <h6>Junior Frontend Developer, <i class="organization experience__organization">Rolling Scopes School (EPAM dept.)</i></h6>
-                    <p class="period experience__period">May, 2021 — Jun, 2022</p>
-                    <div class="activity experience__activity">
+                    <h6>Frontend Developer, <i class="infoSection__organizationName organizationName">Rolling Scopes School (EPAM dept.)</i></h6>
+                    <!-- TODO implement dynamic data (+common time calculation) -->
+                    <p class="period infoSection__period">Nov, 2020 — May, 2022</p>
+                    <div class="activity infoSection__activity">
                       Practiced in the following topics:
                       <ul>
                         <li>JavaScript Native (ES2015+ and early)</li>
@@ -200,11 +204,11 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="experience__engy">
+                  <div class="infoSection__organization engy">
                     <hr>
-                    <h6>International Operations Manager, <i class="organization experience__organization">ENGY LLC</i></h6>
-                    <p class="period experience__period">Apr, 2019 — Present</p>
-                    <p class="activity experience__activity">
+                    <h6>International Operations Manager, <i class="organizationName infoSection__organizationName">ENGY LLC</i></h6>
+                    <p class="period infoSection__period">Apr, 2019 — Feb, 2022</p>
+                    <p class="activity infoSection__activity">
                       Communication with international suppliers, control logistics, supply chains, bargain, contracts conclusion.
                     </p>
                   </div>
@@ -214,14 +218,14 @@
             <div class="ribbon"></div>
           </div>
         </section>
-        <section id="education" class="education container-fluid">
+        <section id="education" class="infoSection education container-fluid">
           <div class="width-wrapper container">
             <div class="row">
-              <div class="education__main col-lg-4">
-                <div class="education__main_wrapper">
-                  <h5 class="section-header education__header">Education</h5>
+              <div class="infoSection__heading col-lg-4">
+                <div class="infoSection__headingWrapper">
+                  <h5 class="section-header infoSection__header">Education</h5>
                   <blockquote>
-                    <p class="section-quote">
+                    <p class="infoSection__blockquoteText">
                       During my studying there were many individual code tasks and 2 team projects.
                       In team projects, there were 3 people each and 1 month for development.
                       We collaborated on Git and Trello Kanban to get the job done in time.
@@ -232,30 +236,21 @@
                   <div id="infinity"></div>
                 </div>
               </div>
-              <div class="education__content col-lg-8">
+              <div class="infoSection__content col-lg-8">
                 <div class="row">
-                  <div class="education__rs-school">
+                  <div class="infoSection__organization rs-school">
                     <hr class="invisible-hr">
-                    <h6>Junior Software Engineer, <i class="organization education__organization">Rolling Scopes School</i></h6>
-                    <p class="period education__period">May, 2021 — Jun, 2022</p>
-                    <p class="activity education__activity">
+                    <h6>Software Engineer, <i class="organizationName infoSection__organizationName">Rolling Scopes School</i></h6>
+                    <p class="period infoSection__period">Nov, 2020 — May, 2022</p>
+                    <p class="activity infoSection__activity">
                         The studying program consisted of 4 stages of self-study. We had access to pre-recorded webinars, recommended materials, and weekly live Q&A sessions with mentors. We also had the ability to communicate with other students and help each other solve any problems. We were provided with a lot of tasks with strict deadlines that should have been covered for each stage. To pass the next stage, we had to successfully complete the tasks and tests from the previous stage without missing the deadlines, and pass a technical interview with mentor. On the latest 2 stages (in case of successful interview passage) we had a personal mentor who answered the questions and reviewed the code.
                     </p>
                   </div>
-                  <div class="education__self">
+                  <div class="infoSection__organization university">
                     <hr>
-                    <h6>Web Developer, <i class="organization education__organization">Self-studying</i></h6>
-                    <p class="period education__period">Dec, 2020 — May, 2021</p>
-                    <p class="activity education__activity">
-                      Pass beginner courses on Hexlet, Stepik, Webformyself, Code-basics, Learn.javascript.ru.
-                      Read books "Code" by Charles Petzold, "Grokking Algorithms" by Aditya Bhargava, "The New CSS Big Book" by D. McFarland.
-                    </p>
-                  </div>
-                  <div class="education__university">
-                    <hr>
-                    <h6>Foreign languages specialist, <i class="organization education__organization">The State University of Humanities and Technologies</i></h6>
-                    <p class="period education__period">Sep, 2012 — Jul, 2017</p>
-                    <p class="activity education__activity">
+                    <h6>Foreign languages specialist, <i class="organizationName infoSection__organizationName">The State University of Humanities and Technologies</i></h6>
+                    <p class="period infoSection__period">Sep, 2012 — Jul, 2017</p>
+                    <p class="activity infoSection__activity">
                       Learn English, German, general subjects, been to China as an exchange program student learning Chinese.
                     </p>
                   </div>
@@ -267,15 +262,15 @@
         </section>
         <section id="portfolio" class="portfolio container-fluid">
           <div class="width-wrapper container">
-            <div class="portfolio__main">
+            <div class="portfolio__headerWrapper">
               <h5 class="section-header portfolio__header">Portfolio</h5>
             </div>
             <div class="portfolio__projects">
               <div class="row">
 
                 <div class="project project-management-app col-sm-6 col-10">
-                  <a class="project__content" target="_blank" href="https://timely-crepe-81fcd8.netlify.app/">
-                    <div class="project__image">
+                  <a class="project__card" target="_blank" href="https://timely-crepe-81fcd8.netlify.app/">
+                    <div class="project__widget">
                       <img src="~@assets/img/project-management-app" alt="project-image" />
                       <div class="project__additional">
                         <p class="project__stack">
@@ -284,7 +279,7 @@
                         </p>
                       </div>
                       <object class="project__repo">
-                        <a class="repo-btn" href="https://github.com/mrJozhkinKot/project-management-app/tree/develop" target="_blank">View code</a>
+                        <a class="repoBtn" href="https://github.com/mrJozhkinKot/project-management-app/tree/develop" target="_blank">View code</a>
                       </object>
                     </div>
                     <p class="project__name">Project Management App, 2022</p>
@@ -292,8 +287,8 @@
                 </div>
 
                 <div class="project rs-lang col-sm-6 col-10">
-                  <a class="project__content" target="_blank" href="https://rslang-amidawolf.netlify.app/">
-                    <div class="project__image">
+                  <a class="project__card" target="_blank" href="https://rslang-amidawolf.netlify.app/">
+                    <div class="project__widget">
                       <img src="~@assets/img/rs-lang.png" alt="project-image" />
                       <div class="project__additional">
                         <p class="project__stack">
@@ -302,7 +297,7 @@
                         </p>
                       </div>
                       <object class="project__repo">
-                        <a class="repo-btn" href="https://github.com/AmidaWolf/rslang/tree/main" target="_blank">View code</a>
+                        <a class="repoBtn" href="https://github.com/AmidaWolf/rslang/tree/main" target="_blank">View code</a>
                       </object>
                     </div>
                     <p class="project__name">RS Lang, 2022</p>
@@ -310,8 +305,8 @@
                 </div>
 
                 <div class="project async-race col-sm-6 col-10">
-                  <a class="project__content" target="_blank" href="https://insane-idea.github.io/async-race/">
-                    <div class="project__image">
+                  <a class="project__card" target="_blank" href="https://insane-idea.github.io/async-race/">
+                    <div class="project__widget">
                       <img src="~@assets/img/async-race.png" alt="project-image" />
                       <div class="project__additional">
                         <p class="project__stack">
@@ -320,7 +315,7 @@
                         </p>
                       </div>
                       <object class="project__repo">
-                        <a class="repo-btn" href="https://github.com/insane-idea/async-race" target="_blank">View code</a>
+                        <a class="repoBtn" href="https://github.com/insane-idea/async-race" target="_blank">View code</a>
                       </object>
                     </div>
                     <p class="project__name">Async race, 2022</p>
@@ -328,8 +323,8 @@
                 </div>
 
                 <div class="project christmas-tree col-sm-6 col-10">
-                  <a class="project__content" target="_blank" href="https://insane-idea.github.io/christmas-task/">
-                    <div class="project__image">
+                  <a class="project__card" target="_blank" href="https://insane-idea.github.io/christmas-task/">
+                    <div class="project__widget">
                       <img src="~@assets/img/christmas-tree.png" alt="project-image" />
                       <div class="project__additional">
                         <p class="project__stack">
@@ -338,7 +333,7 @@
                         </p>
                       </div>
                       <object class="project__repo">
-                        <a class="repo-btn" href="https://github.com/insane-idea/christmas-task" target="_blank">View code</a>
+                        <a class="repoBtn" href="https://github.com/insane-idea/christmas-task" target="_blank">View code</a>
                       </object>
                     </div>
                     <p class="project__name">Christmas tree, 2021</p>
@@ -346,8 +341,8 @@
                 </div>
 
                 <div class="project museum col-sm-6 col-10">
-                  <a class="project__content" target="_blank" href="https://insane-idea.github.io/museum/">
-                    <div class="project__image">
+                  <a class="project__card" target="_blank" href="https://insane-idea.github.io/museum/">
+                    <div class="project__widget">
                       <img src="~@assets/img/museum.png" alt="project-image" />
                       <div class="project__additional">
                         <p class="project__stack">
@@ -356,7 +351,7 @@
                         </p>
                       </div>
                       <object class="project__repo">
-                        <a class="repo-btn" href="https://github.com/insane-idea/museum" target="_blank">View code</a>
+                        <a class="repoBtn" href="https://github.com/insane-idea/museum" target="_blank">View code</a>
                       </object>
                     </div>
                     <p class="project__name">Museum, 2021</p>
@@ -364,8 +359,8 @@
                 </div>
 
                 <div class="project momentum col-sm-6 col-10">
-                  <a class="project__content" target="_blank" href="https://insane-idea.github.io/momentum/">
-                    <div class="project__image">
+                  <a class="project__card" target="_blank" href="https://insane-idea.github.io/momentum/">
+                    <div class="project__widget">
                       <img src="~@assets/img/momentum.png" alt="project-image" />
                       <div class="project__additional">
                         <p class="project__stack">
@@ -374,7 +369,7 @@
                         </p>
                       </div>
                       <object class="project__repo">
-                        <a class="repo-btn" href="https://github.com/insane-idea/momentum" target="_blank">View code</a>
+                        <a class="repoBtn" href="https://github.com/insane-idea/momentum" target="_blank">View code</a>
                       </object>
                     </div>
                     <p class="project__name">Momentum, 2021</p>
@@ -382,8 +377,8 @@
                 </div>
 
                 <div class="project pure-css-slider col-sm-6 col-10">
-                  <a class="project__content" target="_blank" href="https://insane-idea.github.io/cssMemSlider/cssMemSlider/#slide1">
-                    <div class="project__image">
+                  <a class="project__card" target="_blank" href="https://insane-idea.github.io/cssMemSlider/cssMemSlider/#slide1">
+                    <div class="project__widget">
                       <img src="~@assets/img/pure-css-slider.png" alt="project-image" />
                       <div class="project__additional">
                         <p class="project__stack">
@@ -392,7 +387,7 @@
                         </p>
                       </div>
                       <object class="project__repo">
-                        <a class="repo-btn" href="https://github.com/insane-idea/cssMemSlider" target="_blank">View code</a>
+                        <a class="repoBtn" href="https://github.com/insane-idea/cssMemSlider" target="_blank">View code</a>
                       </object>
                     </div>
                     <p class="project__name">Pure CSS Slider, 2021</p>
@@ -400,8 +395,8 @@
                 </div>
 
                 <div class="project clock col-sm-6 col-10">
-                  <a class="project__content" target="_blank" href="https://insane-idea.github.io/cssMemSlider/cssMemSlider/#slide1">
-                    <div class="project__image">
+                  <a class="project__card" target="_blank" href="https://insane-idea.github.io/cssMemSlider/cssMemSlider/#slide1">
+                    <div class="project__widget">
                       <img src="~@assets/img/clock.png" alt="project-image" />
                       <div class="project__additional">
                         <p class="project__stack">
@@ -410,7 +405,7 @@
                         </p>
                       </div>
                       <object class="project__repo">
-                        <a class="repo-btn" href="https://github.com/insane-idea/cssMemSlider" target="_blank">View code</a>
+                        <a class="repoBtn" href="https://github.com/insane-idea/cssMemSlider" target="_blank">View code</a>
                       </object>
                     </div>
                     <p class="project__name">Clock, 2021</p>
@@ -435,29 +430,29 @@
                 </small>
               </p>
             </div>
-            <div class="socials__container col-md-6">
-              <div class="github">
+            <div class="footer__socialIcons col-md-6">
+              <div class="social github">
                 <figure class="github-logo">
                   <a target="_blank" href="https://github.com/insane-idea">
                     <img src="~@assets/svg/icon_github.svg" alt="gh-logo" />
                   </a>
                 </figure>
               </div>
-              <div class="telegram">
+              <div class="social telegram">
                 <figure class="github-logo">
                   <a target="_blank" href="https://t.me/eXec31">
                     <img src="~@assets/svg/icon_telegram.svg" alt="gh-logo" />
                   </a>
                 </figure>
               </div>
-              <div class="linkedin">
+              <div class="social linkedin">
                 <figure class="github-logo">
                   <a target="_blank" href="https://www.linkedin.com/in/sergey-pluzhnikov-9ab5a3241/">
                     <img src="~@assets/svg/icon_linkedin.svg" alt="gh-logo" />
                   </a>
                 </figure>
               </div>
-              <div class="vkontakte">
+              <div class="social vkontakte">
                 <figure class="github-logo">
                   <a target="_blank" href="https://vk.com/id20199210">
                     <img src="~@assets/svg/icon_vkontakte.svg" alt="gh-logo" />
