@@ -1,4 +1,4 @@
-const menuLinks = document.querySelectorAll(".navbar__link[data-goto]");
+const menuLinks = document.querySelectorAll(".navbar__listItemLink[data-goto]");
 
 function hideMenu() {
   const navbarWrapper = document.querySelector(".navbar__wrapper");
