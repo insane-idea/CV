@@ -214,10 +214,13 @@ section {
   clear: both;
   scroll-margin-top: 80px;
 
+  h6 {
+    font-size: 22px;
+  }
+
   h6,
   h6 .infoSection__organization,
   h6 .infoSection__organizationName {
-    font-size: 22px;
     font-family: "Roboto", sans-serif;
     color: #353837;
     padding: 0 0 0.5em;
