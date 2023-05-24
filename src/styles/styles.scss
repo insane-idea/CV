@@ -66,6 +66,11 @@ ol {
   padding-left: 1.5rem;
 }
 
+ul {
+  padding-left: 1.7rem;
+  list-style-type: square;
+}
+
 body._lock {
   overflow: hidden;
 }
@@ -212,6 +217,7 @@ section {
   h6,
   h6 .infoSection__organization,
   h6 .infoSection__organizationName {
+    font-size: 22px;
     font-family: "Roboto", sans-serif;
     color: #353837;
     padding: 0 0 0.5em;
@@ -352,15 +358,38 @@ section {
   &__period,
   &__activity,
   &__organizationName {
-    opacity: 0.8;
+    // opacity: 0.8;
+  }
+
+  &__period {
+    margin-bottom: 0.3rem;
+    padding-bottom: 0;
+    line-height: 27px;
+    font-style: italic;
+  }
+
+  &__periodDuration {
+    // color: #959799;
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 1.5rem;
   }
 
   &__activity {
-    font-style: italic;
+    // font-style: italic;
   }
 
   &__organizationName {
     font-weight: 300;
+  }
+
+  &__listSubtitle {
+    // font-family: "Roboto", sans-serif;
+    // font-weight: 500;
+    line-height: 27px;
+    // margin-bottom: 0.6rem;
   }
 }
 
@@ -588,6 +617,8 @@ section {
     }
   }
 }
+
+// TODO pass correct font data to breakpoints
 
 @media screen and (max-width: 1199px) {
   .portfolio {
