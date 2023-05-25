@@ -105,25 +105,6 @@ body._lock {
   }
 }
 
-blockquote {
-  margin: 0;
-  max-width: 360px;
-  color: #231e28;
-  padding-top: 35px;
-  position: relative;
-  font-weight: 300;
-
-  &:before {
-    content: "\201C";
-    font-family: Arial;
-    color: #cbdde7;
-    font-size: 70px;
-    position: absolute;
-    left: 0;
-    top: -15px;
-  }
-}
-
 .header {
   position: fixed;
   top: 0;
@@ -346,6 +327,25 @@ section {
 }
 
 .infoSection {
+  blockquote {
+    margin: 0;
+    max-width: 360px;
+    color: #231e28;
+    padding-top: 35px;
+    position: relative;
+    font-weight: 300;
+  
+    &:before {
+      content: "\201C";
+      font-family: Arial;
+      color: #cbdde7;
+      font-size: 70px;
+      position: absolute;
+      left: 0;
+      top: -15px;
+    }
+  }
+
   &__heading {
     display: flex;
     flex-direction: column;
@@ -358,12 +358,6 @@ section {
     padding-right: 40px;
   }
 
-  &__period,
-  &__activity,
-  &__organizationName {
-    // opacity: 0.8;
-  }
-
   &__period {
     margin-bottom: 0.3rem;
     padding-bottom: 0;
@@ -372,7 +366,6 @@ section {
   }
 
   &__periodDuration {
-    // color: #959799;
     font-size: 20px;
     line-height: 27px;
     font-weight: 300;
@@ -380,19 +373,12 @@ section {
     margin-bottom: 1.5rem;
   }
 
-  &__activity {
-    // font-style: italic;
-  }
-
   &__organizationName {
     font-weight: 300;
   }
 
   &__listSubtitle {
-    // font-family: "Roboto", sans-serif;
-    // font-weight: 500;
     line-height: 27px;
-    // margin-bottom: 0.6rem;
   }
 }
 
@@ -621,7 +607,8 @@ section {
   }
 }
 
-// TODO pass correct font data to breakpoints
+// TODO make fonts and lh in 'px'
+// TODO pass correct font params to breakpoints
 
 @media screen and (max-width: 1199px) {
   .portfolio {
